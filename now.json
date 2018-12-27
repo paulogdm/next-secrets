@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "next-secrets",
+  "public": false,
+  "builds": [{"src": "package.json", "use": "@now/next"}],
+  "env": {
+    "PREQUEL": "@prequel-secret"
+  }
+}

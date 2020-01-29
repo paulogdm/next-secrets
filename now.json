@@ -1,9 +1,12 @@
 {
-  "version": 2,
-  "name": "next-secrets",
-  "public": false,
-  "builds": [{"src": "package.json", "use": "@now/next"}],
   "env": {
-    "PREQUEL": "@prequel-secret"
+    "APISECRET": "RUNTIME ENV API SECRET",
+    "GIPSECRET": "RUNTIME ENV GIP SECRET"
+  },
+  "build": {
+    "env": {
+      "APISECRET": "BUILDTIME ENV API SECRET",
+      "GIPSECRET": "BUILDTIME ENV GIP SECRET"
+    }
   }
 }
